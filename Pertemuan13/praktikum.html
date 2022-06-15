@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Bootstrap demo</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h5{
+            font-weight: 750;
+            color: white;
+        }
+
+        p{
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .header,
+        .footer,
+        #footer {
+            height: 10vh;
+            background-color: #4f3476;
+        }
+
+        .testimoni{
+            background-color: #76343a;
+        }
+
+        .kritik{
+            background-color: #5b7634;
+        }
+
+        .saran{
+            background-color: #347670;
+        }
+        .main .container-fluid,
+        .row,
+        .col {
+            height: 100%;
+        }
+
+        .main {
+            height: 80vh;
+        }
+
+        .min-vh-50 {
+            height: 50%;
+        }
+
+        .navbar {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header container-fluid">
+            <nav class="navbar d-flex justify-content-between align-items-center">
+                <h5>Muhammad Arden Prabaswara</h5>
+                <h5>K3521051</h5>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 p-4 testimoni">
+                        <h5>TESTIMONI</h5>
+                        <p>
+                            Awalnya saya tertarik dengan desain web, tapi semakin kesini banyakkk sekali design nya, jujur saja saya agak keteteran, karena saya bukan anak design. Tapi jujur saya enjoy parah di matkul ini, mungkin karena pembawaan materi yang dapat dibilang sangat dibawa asik namun tidak lepas dari ketegasan tugas.
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <div class="row">
+                            <div class="col-12 min-vh-50 p-4 kritik">
+                                <h5>KRITIK</h5>
+                                <p>
+                                    Kritik pribadi mungkin bukan untuk pak nurcahya tercinta, tapi lebih ke lab nya kurang lcd + kalau presentasi di depan yang bagian menengah kebelakang ga keliatan sama sekali, terlebih yang mempunyai mata minus.
+                                </p>
+                            </div>
+                            <div class="col-12 min-vh-50 p-4 saran">
+                                <h5>SARAN</h5>
+                                <p>
+                                    Mungkin saran dari saya lab a lebih dilengkapi dengan lcd, dan untuk presentasi diberi opsional diadakan gmeet lalu share screen, agar yang jauh dari layar di depan tetap dapat melihat materi yang dijelaskan di depan kelas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="container-fluid">
+            <div class="footer d-flex justify-content-center align-items-center">
+                <h5>< < < < Kritik saran pribadi copyright arden > > > ></h5>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

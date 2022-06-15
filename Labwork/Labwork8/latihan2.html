@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<center>
+		<h1 id="jam">Placeholder Jam</h1>
+		<br>
+		<button id="start">START/STOP</button>
+	</center>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#start').click(function(){
+				 $('#jam').toggleClass('show');
+				setInterval(function() {
+					if ($('#jam').attr('class') == ('show')){
+					const days =  ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu' ];
+					const months = ['Januari', 'Februari', ' Maret', 'April', 'Mei', 'Juni', 'Juli',' Agustus', 'September', 'Oktober', 'November', 'Desember'];
+				    var now = new Date(Date.now());
+				    var year = now.getFullYear();
+				    var date = now.getDate();
+				    var day = days[now.getDay()];
+				    var month = months[now.getMonth()];
+				    var hour = now.getHours();
+				    var minute = now.getMinutes();
+				    var second = now.getSeconds();
+				    date = date < 10 ? '0'+date : date
+				    hour = hour < 10 ? '0'+hour : hour
+				    minute = minute < 10 ? '0'+minute : minute
+				    second = second < 10 ? '0'+second : second
+				    $('#jam').html(
+				    	day + ', ' + date + ' ' + month + ' ' + year + '<br>' + hour + ' : ' + minute + ' : ' + second);
+					}
+					else{
+						$('#jam').html('Placeholder jam')
+					}
+				}, 500);				
+			})
+		})		
+	</script>
+</body>
+</html>

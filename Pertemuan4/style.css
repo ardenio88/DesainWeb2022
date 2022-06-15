@@ -1,0 +1,17 @@
+body{
+	background: :blue;
+	color: white;
+	font-family: Verdana;
+}
+h1{
+	color: white;
+	}
+.biru{
+	background: cyan;
+	color: red;
+	}
+
+.abu{
+	background: grey;
+	color: yellowgreen;
+	}

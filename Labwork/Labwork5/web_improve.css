@@ -1,0 +1,238 @@
+body{
+	background-image: url(https://64.media.tumblr.com/279a5f88686d4132784e2a30f3a5d289/c85b99d7cfaaef21-a6/s640x960/4212de7ebc9a9b890154e1df66d11dd687d3a5b8.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: top left;
+}
+#wrap{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+#header a{
+	background-image: url(https://64.media.tumblr.com/b58ff43b47e3a962812e6462bb94e6eb/31a630d14069afa1-b8/s500x750/ad4e13f2274631cbd96d229d717aa16ae7ddb966.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 450px 150px;
+	width: 730px;
+	height: 300px;
+	margin: auto;
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+	float: right;
+	background-color: black;
+	transition: transform 1s;
+}
+#header a:hover{
+	transition: transform 1s;
+	transform: scale(1.02);
+}
+#menu ul{
+	float: right;
+	padding: 0 0px;
+	position: relative;
+	width: 730px;
+}
+
+#menu ul::after{
+	content: "";
+	clear: both;
+	display: inline-flex;
+}
+
+#menu ul li{
+	float: left;
+	list-style: none;
+	background-color: #5e1d0f;
+	transition: transform 0.5s;
+	border-radius:89% 11% 82% 18% / 33% 71% 29% 67%  ;
+	margin: 0 9.3194px 0 0;
+
+}
+
+#menu ul li:hover{
+	background: #b3371d;
+	transform: scale(1.2);
+	z-index: 100;
+	opacity: 1 !important;
+
+}
+#menu ul:hover li{
+	opacity: 0.3;
+}
+#menu ul li a{
+	display: inline-flex;
+	color: #dfd2cf;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#menu ul li:hover a{
+	color: white;
+}
+#logo{
+	width: 200px;
+	height: 200px;
+}
+#kiri{
+	border-bottom-right-radius: 50px;
+	background-color: white;
+	width: 250px;
+	height: auto;
+	margin: 0 0 20px;
+	float: left;
+	list-style: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+	position: sticky;
+	top: 0;
+}
+
+#kiri ul{
+	margin: 10px 0 20px 10px;
+	padding: 0;
+	list-style: none;
+	width: 200px;
+	position: relative;
+}
+
+#kiri ul li{
+	width: 100%;
+	margin: 4px 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	border-left: 2px solid black;
+	transition: 1s;
+	cursor: pointer;
+}
+#kiri ul li::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	transform: scaleX(0);
+	transition: 1s;
+	transform-origin: left;
+}
+#kiri ul li:hover::before{
+	transform: scaleX(1.0);
+}
+#kiri ul li:hover{
+	left: 10px;
+}
+#kiri h2{
+	margin: 0px 0 0px 0;
+	padding: 5px 12px;
+	color: white;
+	font-size: 20px;
+	background: #5e1d0f;
+}
+
+#kiri a{
+	position: relative;
+	display: inline-block;
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+}
+#kiri ul li:hover a{
+	color: white;
+}
+#konten{
+	background-color: white;
+	width: 690px;
+	height: auto;
+	margin: 0 0 20px;
+	padding: 20px 20px 20px 20px;
+	float: right;
+	box-shadow: #5e1d0f 0px 1px 4px, #b3371d 0px 0px 0px 3px;
+	border-radius: 15px;
+	font-family: font-family: 'Archivo Black', arial, sans-serif !important;
+}
+
+
+.posttitle{
+	text-decoration: none;
+	font-size: 30px;
+	color: #5e1d0f;
+	font-weight: 800;
+}
+
+.posttitle a{
+	text-decoration: none;
+}
+
+.post1{
+	text-align: left !important;
+}
+.post{
+	text-align: center;
+	margin: 0 20px 0 60px;
+}
+.post img{
+	width: 30%;
+	filter: grayscale(100%);
+	transition: 1s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	border-radius: 25px;
+	position: relative;
+}
+.post img:hover{
+	filter: grayscale(0%);
+	transform: scale(1.15);
+	z-index: 1000;
+}
+b a{
+	color: darkred;
+	text-decoration: none;
+}
+b a:hover{
+	color: orangered;
+}
+
+
+#logo{
+	width: 200px;
+	height: 200px;
+}
+
+#footer{
+	background-color: #5e1d0f;
+	padding: 20px 0 20px 0;
+	width: 1000px;
+	height: auto;
+	clear: both;
+	margin: 20 0;
+	text-align: center;
+	color: white;
+	border-radius: 34px;
+	font-family: 'Archivo Black', arial, sans-serif !important;
+}
+#menu ul li:hover > ul{
+	display: block;
+}
+
+#menu ul ul{
+	position: absolute;
+	padding: 0;
+	top: 100%;
+	display: none;
+	width: auto;
+}
+
+#menu ul ul li{
+	float: none;
+	position: relative;
+	border-radius: 42% 58% 76% 24% / 71% 26% 74% 29%  !important;
+}
+
+#menu ul ul li a{
+	padding: 10px 25.5px;
+	color: white;
+}
+
+#menu ul ul li a:hover{
+	color: white;
+}
